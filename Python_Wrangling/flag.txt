@@ -1,0 +1,24 @@
+ls                                                           
+ende.py  flag.txt.en  pw.txt
+                                                                                                     
+┌──(brian㉿BRIAN)-[~/Desktop/pico/Python_Wrangling]
+└─$ cp flag.txt.en pole.txt                                      
+                                                                                                     
+┌──(brian㉿BRIAN)-[~/Desktop/pico/Python_Wrangling]
+└─$ ls
+ende.py  flag.txt.en  pole.txt  pw.txt
+                                                                                                     
+┌──(brian㉿BRIAN)-[~/Desktop/pico/Python_Wrangling]
+└─$ python ende.py -d flag.txt.en
+Please enter the password:^Z
+zsh: suspended  python ende.py -d flag.txt.en
+                                                                                                     
+┌──(brian㉿BRIAN)-[~/Desktop/pico/Python_Wrangling]
+└─$ cat pw.txt              
+ac9bd0ffac9bd0ffac9bd0ffac9bd0ff
+                                                                                                     
+┌──(brian㉿BRIAN)-[~/Desktop/pico/Python_Wrangling]
+└─$ python ende.py -d flag.txt.en
+Please enter the password:ac9bd0ffac9bd0ffac9bd0ffac9bd0ff
+picoCTF{4p0110_1n_7h3_h0us3_ac9bd0ff}
+                                                           

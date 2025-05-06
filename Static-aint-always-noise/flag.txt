@@ -1,0 +1,65 @@
+wget https://mercury.picoctf.net/static/ec4dbd8898ade34e1d60d5b70c1b8c8c/ltdis.sh
+--2025-05-06 08:41:37--  https://mercury.picoctf.net/static/ec4dbd8898ade34e1d60d5b70c1b8c8c/ltdis.sh
+Resolving mercury.picoctf.net (mercury.picoctf.net)... 18.189.209.142
+Connecting to mercury.picoctf.net (mercury.picoctf.net)|18.189.209.142|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 785 [application/octet-stream]
+Saving to: ‘ltdis.sh’
+
+ltdis.sh                                  100%[===================================================================================>]     785  --.-KB/s    in 0s      
+
+2025-05-06 08:41:38 (8.32 MB/s) - ‘ltdis.sh’ saved [785/785]
+
+                                                                                                                                                                      
+┌──(brian㉿BRIAN)-[~/Desktop/pico/Static-aint-always-noise]
+└─$ ls           
+ltdis.sh  static
+                                                                                                                                                                      
+┌──(brian㉿BRIAN)-[~/Desktop/pico/Static-aint-always-noise]
+└─$ subl ltdis.sh  
+                                                                                                                                                                      
+┌──(brian㉿BRIAN)-[~/Desktop/pico/Static-aint-always-noise]
+└─$ subl static                
+                                                                                                                                                                      
+┌──(brian㉿BRIAN)-[~/Desktop/pico/Static-aint-always-noise]
+└─$ chmod +x ltdis.sh          
+                                                                                                                                                                      
+┌──(brian㉿BRIAN)-[~/Desktop/pico/Static-aint-always-noise]
+└─$ ./ltdis.sh  
+Attempting disassembly of  ...
+objdump: 'a.out': No such file
+objdump: section '.text' mentioned in a -j option, but not found in any input file
+Disassembly failed!
+Usage: ltdis.sh <program-file>
+Bye!
+                                                                                                                                                                      
+┌──(brian㉿BRIAN)-[~/Desktop/pico/Static-aint-always-noise]
+└─$ ./ltdis.sh static 
+Attempting disassembly of static ...
+Disassembly successful! Available at: static.ltdis.x86_64.txt
+Ripping strings from binary with file offsets...
+Any strings found in static have been written to static.ltdis.strings.txt with file offset
+                                                                                                                                                                      
+┌──(brian㉿BRIAN)-[~/Desktop/pico/Static-aint-always-noise]
+└─$ ls
+ltdis.sh  static  static.ltdis.strings.txt  static.ltdis.x86_64.txt
+                                                                                                                                                                      
+┌──(brian㉿BRIAN)-[~/Desktop/pico/Static-aint-always-noise]
+└─$ cat static.ltdis.strings.txt
+    238 /lib64/ld-linux-x86-64.so.2
+    361 libc.so.6
+    36b puts
+    370 __cxa_finalize
+    37f __libc_start_main
+    391 GLIBC_2.2.5
+    39d _ITM_deregisterTMCloneTable
+    3b9 __gmon_start__
+    3c8 _ITM_registerTMCloneTable
+    660 AWAVI
+    667 AUATL
+    6ba []A\A]A^A_
+    6e8 Oh hai! Wait what? A flag? Yes, it's around here somewhere!
+    7c7 ;*3$"
+   1020 picoCTF{d15a5m_t34s3r_98d35619}
+
+grep "picoCTF{"  static.ltdis.strings.txt
