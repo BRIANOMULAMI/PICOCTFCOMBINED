@@ -56,4 +56,8 @@ level_4_pw_check()
 # The strings below are 100 possibilities for the correct password. 
 #   (Only 1 is correct)
 
+python3 level4.py
+picoCTF{fl45h_5pr1ng1ng_cf341ff1}
+
+
 
