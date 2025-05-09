@@ -1,0 +1,37 @@
+┌──(brian㉿BRIAN)-[~/Desktop/pico/PW_Crack_3]
+└─$ ls
+level3.flag.txt.enc  level3.hash.bin  level3.py
+                                                                                                                                                                      
+┌──(brian㉿BRIAN)-[~/Desktop/pico/PW_Crack_3]
+└─$ subl level3.py 
+                                                                                                                                                                      
+┌──(brian㉿BRIAN)-[~/Desktop/pico/PW_Crack_3]
+└─$ python3 level3.py 
+Please enter correct password for flag: 6997                                              
+That password is incorrect
+                                                                                                                                                                      
+┌──(brian㉿BRIAN)-[~/Desktop/pico/PW_Crack_3]
+└─$ python3 level3.py
+Please enter correct password for flag: 3ac8
+That password is incorrect
+                                                                                                                                                                      
+┌──(brian㉿BRIAN)-[~/Desktop/pico/PW_Crack_3]
+└─$ python3 level3.py
+Please enter correct password for flag: f0ac
+That password is incorrect
+                                                                                                                                                                      
+┌──(brian㉿BRIAN)-[~/Desktop/pico/PW_Crack_3]
+└─$ python3 level3.py
+Please enter correct password for flag: ec27
+That password is incorrect
+                                                                                                                                                                      
+┌──(brian㉿BRIAN)-[~/Desktop/pico/PW_Crack_3]
+└─$ python3 level3.py
+Please enter correct password for flag: 4e66
+That password is incorrect
+                                                                                                                                                                      
+┌──(brian㉿BRIAN)-[~/Desktop/pico/PW_Crack_3]
+└─$ python3 level3.py
+Please enter correct password for flag: 865e
+Welcome back... your flag, user:
+picoCTF{m45h_fl1ng1ng_2b072a90}

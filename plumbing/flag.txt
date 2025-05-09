@@ -1,0 +1,4 @@
+                                                                                                                                                                  
+┌──(brian㉿BRIAN)-[~/Desktop/pico/plumbing]
+└─$ nc jupiter.challenges.picoctf.org 7480 | grep 'pico'
+picoCTF{digital_plumb3r_06e9d954}
